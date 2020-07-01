@@ -1,0 +1,120 @@
+ List the 6 stages of boot process ?
+
+BIOS,  MBR,  GRUB, Kernel, init, runlevel.
+
+
+  Explain the entries in fstab ?
+
+device to mount mount point file system type mount options dump fscheck.
+
+
+cifs file share
+
+What is  /etc/passwd file.
+ 
+
+                            The passwd file contains the user account information such as user id, group id, home directory, shell etc..
+#  getent passwd |grep redhat      or    #  cat /etc/passwd
+
+
+Network Information Service (NIS) is a client-server directory service protocol used for distributed systems to maintain consistent data and configuration files throughout a network. It was initially developed by Sun Microsystems to centralize the administration of Unix systems. It later developed into an industry standard that was adopted by all major Unix vendors.
+
+NFS, or Network File System
+The Oracle Cluster File System (OCFS2) is an open source general-purpose file system that allows files to be shared between nodes of a cluster, including RAC. ... Create a mount point for the cluster file system.
+XFS is a 64-bit, highly scalable file system 
+The ext4 or fourth extended filesystem is a widely-used journaling file system for Linux
+
+ftp -21
+ssh -22
+telnet - 23
+smtp -25
+dns -53
+mysql - 3306
+http 80
+https 443
+ntpd - 123 udp
+
+
+Using the command ‘cat /proc/net/bonding/bond0’
+We can enable a service using the Command ‘chkconfig <Service-Name> on –level 3’
+
+use & symbol at the end to send a job to background
+
+
+
+sed '1! G; h;$!d' file1 Use sed command to replace the content of the file 
+
+LVM - logical volume management
+
+uname - for kernel version
+*  Which are the runlevels in linux ?
+runlevel 0  –  Halt/ Shutdown .
+runlevel 1  –  Single user mode.
+runlevel 2  –  Multi user mode without network.
+runlevel 3  –  Multi user mode with network.
+runlevel 4  –  unused.
+runlevel 5  –  Graphical.
+runlevel 6  –  Reboot
+File system is the hierarchy of directories that is used to organize files in computer.Each file system contains a control block ( which contains information about that file system ) and inodes ( Which contains information about each files and data blocks).
+
+
+
+export PS1='$ `pwd`:`hostname`>' .File1 
+
+
+#!/usr/bin/env perl
+chmod u+x to change permission of a file 
+
+ps aux | grep Z - to find zombie process and to kill 
+
+ps -p 20736 -o ppid use this command to find a PPID and kill -17 20735 to kill a zombie process
+
+ln -s to create a soft link 
+
+tail -f will give you last few lines from error log
+
+
+SMTP          25
+DNS            53
+FTP             20 (data transfer) , 21 ( Connection established)
+DHCP         67/UDP(dhcp server) , 68/UDP(dhcp client)
+SSH            22
+Squid         3128
+
+What is SSL in networking?
+The Secure Sockets Layer (SSL) and Transport Layer Security (TLS) is the most widely deployed security protocol used today. It is essentially a protocol that provides a secure channel between two machines operating over the Internet or an internal network.
+
+The SMB protocol operates in Layer 7, also known as the application layer, and can be used over TCP/IP on port 445 for transport. Early dialects of the SMB protocol use the application programming interface (API) NetBIOS over TCP/IP, or legacy protocols such as the Internetwork Packet Exchange or NetBEUI.
+
+UDP (User Datagram Protocol) is an alternative communications protocol to Transmission Control Protocol (TCP) used primarily for establishing low-latency and loss-tolerating connections between applications on the internet
+
+TCP is reliable as it guarantees delivery of data to the destination router. ... UDP is faster, simpler and more efficient than TCP. Retransmission of lost packets is possible in TCP, but not in UDP. There is no retransmission of lost packets in User Datagram Protocol (UDP).
+
+
+SSH is typically used to log into a remote machine and execute commands, but it also supports tunneling, forwarding TCP ports and X11 connections; it can transfer files using the associated SSH file transfer (SFTP) or secure copy (SCP) protocols. SSH uses the client-server model.
+
+LDAP Directory Server Installation and configuration. Description: Lightweight Directory Access Protocol (LDAP) is a means of serving data on individuals, system users, network devices and systems over the network for e-mail clients, applications requiring authentication or information.
+
+netstat (network statistics) is a command line tool for monitoring network connections both incoming and outgoing as well as viewing routing tables, interface statistics etc.
+
+vmstat command in Linux/Unix is a performance monitoring command of the system as it gives the information about processes, memory, paging, block IO, disk and CPU scheduling. All these functionalities makes the command vmstat also known as virtual memory statistic reporter.
+
+A storage area network (SAN) is a dedicated, high-speed network that provides access to block-level storage. SANs were adopted to improve application availability and performance by segregating storage traffic from the rest of the LAN.
+SAN and network-attached storage (NAS) are both network-based storage solutions. A SAN typically uses Fibre Channel connectivity, while NAS typically ties into to the network through a standard Ethernet connection. A SAN stores data at the block level, while NAS accesses data as files. To a client OS, a SAN typically appears as a disk and exists as its own separate network of storage devices, while NAS appears as a file server.
+The Dell EMC VNX series of storage systems are a family of systems that provides unified file and block storage
+ISCSI, which stands for Internet Small Computer System Interface, works on top of the Transport Control Protocol (TCP) and allows the SCSI command to be sent end-to-end over local-area networks (LANs), wide-area networks (WANs) or the internet.
+
+ ‘cat /proc/net/bonding/bond0’
+ 
+
+
+Class	Address Range	Supports
+Class A	1.0.0.1 to 126.255.255.254	Supports 16 million hosts on each of 127 networks.
+
+Class B	128.1.0.1 to 191.255.255.254	Supports 65,000 hosts on each of 16,000 networks.
+
+Class C	192.0.1.1 to 223.255.254.254	Supports 254 hosts on each of 2 million networks.
+
+Class D	224.0.0.0 to 239.255.255.255	Reserved for multicast groups.
+
+Class E	240.0.0.0 to 254.255.255.254	Reserved for future use, or Research and Development Purposes.
