@@ -1,0 +1,6 @@
+update from sec 2 dev
+/usr/repo/inventory/aws/all/
+plugin: Failed to describe instances: An error occurred (AccessDenied) when
+calling the AssumeRole operation: User:
+arn:aws:iam::29xx753yt86:user/Ansible.Service.Account is not authorized to
+perform: sts:AssumeRole on resource:
